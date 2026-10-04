@@ -170,6 +170,7 @@ export default function Home() {
                 desc: "메뉴판, 원데이 클래스 안내, 오시는 길까지 한 페이지에.",
                 color: "#e8a0a0",
                 bg: "#2a1f1f",
+                url: "https://flower-cafe.vercel.app",
               },
               {
                 title: "리브 인테리어",
@@ -177,6 +178,7 @@ export default function Home() {
                 desc: "시공 사례 갤러리, 서비스별 견적 안내, 무료 상담 신청.",
                 color: "#c9a96e",
                 bg: "#1f1d18",
+                url: "https://portfolio-interior.vercel.app",
               },
               {
                 title: "소반 한식당",
@@ -184,6 +186,7 @@ export default function Home() {
                 desc: "정식/단품 메뉴, 예약 안내, 위치 정보.",
                 color: "#c45c4a",
                 bg: "#1f1815",
+                url: "https://portfolio-restaurant.vercel.app",
               },
               {
                 title: "포커스 스터디카페",
@@ -191,15 +194,19 @@ export default function Home() {
                 desc: "좌석별 안내, 시간/정기권 요금표, 시설 소개.",
                 color: "#3b82f6",
                 bg: "#141825",
+                url: "https://portfolio-studycafe.vercel.app",
               },
             ].map((p) => (
-              <div key={p.title} className="card p-6" style={{ background: p.bg }}>
+              <a key={p.title} href={p.url} target="_blank" rel="noopener noreferrer" className="card p-6 block hover:scale-[1.02] transition-transform" style={{ background: p.bg }}>
                 <span className="text-xs font-medium px-2 py-0.5 rounded-full" style={{ border: `1px solid ${p.color}30`, color: p.color }}>
                   {p.tag}
                 </span>
                 <h3 className="text-lg font-bold text-white mt-3 mb-2">{p.title}</h3>
                 <p className="text-sm" style={{ color: "var(--muted)" }}>{p.desc}</p>
-              </div>
+                <span className="text-xs mt-3 inline-block font-medium hover:underline" style={{ color: p.color }}>
+                  사이트 보기 &rarr;
+                </span>
+              </a>
             ))}
           </div>
         </div>
