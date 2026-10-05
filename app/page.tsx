@@ -170,7 +170,7 @@ export default function Home() {
                 desc: "메뉴판, 원데이 클래스 안내, 오시는 길까지 한 페이지에.",
                 color: "#e8a0a0",
                 bg: "#2a1f1f",
-                url: "https://flower-cafe.vercel.app",
+                url: "https://flower-cafe-seven.vercel.app",
               },
               {
                 title: "리브 인테리어",
@@ -178,7 +178,7 @@ export default function Home() {
                 desc: "시공 사례 갤러리, 서비스별 견적 안내, 무료 상담 신청.",
                 color: "#c9a96e",
                 bg: "#1f1d18",
-                url: "https://portfolio-interior.vercel.app",
+                url: "https://portfolio-interior-chi.vercel.app",
               },
               {
                 title: "소반 한식당",
@@ -186,7 +186,7 @@ export default function Home() {
                 desc: "정식/단품 메뉴, 예약 안내, 위치 정보.",
                 color: "#c45c4a",
                 bg: "#1f1815",
-                url: "https://portfolio-restaurant.vercel.app",
+                url: "https://portfolio-restaurant-taupe.vercel.app",
               },
               {
                 title: "포커스 스터디카페",
